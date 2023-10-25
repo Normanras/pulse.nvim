@@ -204,7 +204,7 @@ M.add = function(name, opts)
         cb = function(timer)
 		  local notify = require("notify")
 		  notify({ timer.message }, timer._level, {
-			title = 'Pulse Timer | .. ' timer.name,
+			title = 'Pulse Timer | ' ..  timer.name,
 		  })
 		  end,
     }, opts or {})
